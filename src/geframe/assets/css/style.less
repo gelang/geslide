@@ -28,7 +28,7 @@ h1 {
 h3 {
     font-size: 25px;
     font-weight: normal;
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 p {
@@ -38,7 +38,7 @@ p {
 .slide {
     width: 980px;
     height: 600px;
-	margin: 0;
+    margin: 0;
 
     > div {
         padding: 20px 40px;
@@ -48,6 +48,19 @@ p {
         background-color: white;
         border-radius: 10px;
         box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    &.box {
+        width: 500px;
+        height: 300px;
+    }
+
+    &.transparent {
+        opacity: 0;
+    }
+
+    &.future, &.past {
+        z-index: -1;
     }
 }
 
@@ -59,6 +72,10 @@ p {
 
         &.active {
             opacity: 1;
+
+            &.transparent {
+                opacity: 0;
+            }
         }
     }
 }

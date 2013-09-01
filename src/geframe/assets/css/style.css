@@ -46,12 +46,26 @@ p {
   border-radius: 10px;
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
 }
+.slide.box {
+  width: 500px;
+  height: 300px;
+}
+.slide.transparent {
+  opacity: 0;
+}
+.slide.future,
+.slide.past {
+  z-index: -1;
+}
 .impress-enabled .step {
   margin: 0;
   opacity: 0.1;
 }
 .impress-enabled .step.active {
   opacity: 1;
+}
+.impress-enabled .step.active.transparent {
+  opacity: 0;
 }
 #overview {
   display: none;

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Demo Slide 003</title>
+    <link href="assets/css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="impress"></div>
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+    <script src="assets/js/impress.js"></script>
+    <script src="assets/js/gelang.js"></script>
+    <script src="assets/js/gelang.slide.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ppt1 = {
+                slides: [
+                    { name: "slide1", title: "Slide 01", x: 0, y: 0, z: 0, rx: 0, ry: 0, rz: 0 },
+                    { name: "slide2", title: "Slide 02", x: 500, y: 0, z: -500, rx: 0, ry: 90, rz: 0 },
+                    { name: "slide3", title: "Slide 03", x: 0, y: 0, z: -1000, rx: 0, ry: 180, rz: 0 },
+                    { name: "slide4", title: "Slide 04", x: -500, y: 0, z: -500, rx: 0, ry: 270, rz: 0 },
+                ]
+            };
+            var ppt2 = {
+                slides: [
+                    { name: "slide1", title: "Slide 01", subtitle: "Slide 001 title description", scale: "0.98", x: 1000, y: 0, z: 0, rx: 0, ry: 0, rz: 0 },
+                    {
+                        name: "slide2", title: "Slide 02", subtitle: "Slide 002 title description", scale: "0.98", x: 2000, y: 0, z: 0, rx: 0, ry: 0, rz: 0,
+                        content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat"
+                    },
+                    {
+                        name: "slide3", title: "Slide 03", subtitle: "Slide 003 title description", scale: "0.98", x: 3000, y: 0, z: 0, rx: 0, ry: 0, rz: 0,
+                        contents: [
+                            { content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. euismod tincidunt ut laoreet dolore magna aliquam erat volutpat." },
+                            { content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat." },
+                            { content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat." },
+                        ]
+                    },
+                    {
+                        name: "slide4", title: "Slide 04", subtitle: "Slide 004 title description", scale: "0.98", x: 4000, y: 0, z: 0, rx: 0, ry: 0, rz: 0,
+                        content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat:" +
+                                 "<ul>" +
+                                 "<li>" + "Value 001" + "</li>" +
+                                 "<li>" + "Value 002" + "</li>" +
+                                 "<li>" + "Value 003" + "</li>" +
+                                 "<li>" + "Value 004" + "</li>" +
+                                 "</ul>"
+                    },
+                    {
+                        name: "slide5", title: "Slide 05", subtitle: "Slide 005 title description", scale: "0.98", x: 5000, y: 0, z: 0, rx: 0, ry: 0, rz: 0,
+                        content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.:" +
+                                 "<br/><input type='radio' name='option5' id='opt5a'>" + "<label for='opt5a'>Value 001</label>" + "</input>" +
+                                 "<br/><input type='radio' name='option5' id='opt5b'>" + "<label for='opt5b'>Value 002</label>" + "</input>" +
+                                 "<br/><input type='radio' name='option5' id='opt5c'>" + "<label for='opt5c'>Value 003</label>" + "</input>" +
+                                 "<br/><input type='radio' name='option5' id='opt5d'>" + "<label for='opt5d'>Value 004</label>" + "</input>"
+                    },
+                    { name: "slide6", title: "Slide 06", subtitle: "Slide 006 title description", scale: "0.98", x: 6000, y: 0, z: 0, rx: 0, ry: 0, rz: 0 },
+                    { name: "slide7", title: "Slide 07", subtitle: "Slide 007 title description", scale: "0.98", x: 7000, y: 0, z: 0, rx: 0, ry: 0, rz: 0 },
+                    { name: "slide8", title: "Slide 08", subtitle: "Slide 008 title description", scale: "0.98", x: 8000, y: 0, z: 0, rx: 0, ry: 0, rz: 0 },
+                    { name: "slide9", title: "Slide 09", subtitle: "Slide 009 title description", scale: "0.98", x: 9000, y: 0, z: 0, rx: 0, ry: 0, rz: 0 },
+                ]
+            };
+            var slide = new GeLang.Slide(ppt2);
+
+            slide.render();
+        });
+    </script>
+</body>
+</html>

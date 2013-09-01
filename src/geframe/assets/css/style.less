@@ -1,0 +1,68 @@
+﻿@base-color: #007acc;
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+    background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    background-color: darken(@base-color, 20%);
+    margin: -20px -40px 8px;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 40px;
+    color: lighten(@base-color, 50%);
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: normal;
+	margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.slide {
+    width: 980px;
+    height: 600px;
+	margin: 0;
+
+    > div {
+        padding: 20px 40px;
+        display: block;
+        height: 100%;
+        color: #808080;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+.impress-enabled {
+    .step {
+        margin: 0;
+        opacity: 0.1;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+#overview {
+    display: none;
+}

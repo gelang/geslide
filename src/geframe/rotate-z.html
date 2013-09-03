@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Rotate Z</title>
+    <link href="assets/css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="impress"></div>
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+    <script src="assets/js/impress.js"></script>
+    <script src="assets/js/gelang.js"></script>
+    <script src="assets/js/gelang.slide.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var slide = new GeLang.Slide({
+                slides: [
+                    {
+                        name: "slide0", title: "Slide 00", x: 0, y: 0, z: 100, rx: 0, ry: 0, rz: 0, scale: 5,
+                        subtitle: "Demo Slide 00"
+                    },
+                    { name: "slide1", title: "Slide 01", x: 0, y: -250, z: 40, rx: 0, ry: 0, rz: 0 },
+                    { name: "slide2", title: "Slide 02", x: 500, y: 0, z: 30, rx: 0, ry: 0, rz: 90 },
+                    { name: "slide3", title: "Slide 03", x: 0, y: 250, z: 20, rx: 0, ry: 0, rz: 180 },
+                    { name: "slide4", title: "Slide 04", x: -500, y: 0, z: 10, rx: 0, ry: 0, rz: 270 },
+                ]
+            });
+            slide.render();
+        });
+    </script>
+</body>
+</html>

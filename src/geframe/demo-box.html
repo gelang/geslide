@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Trans Z</title>
+    <link href="assets/css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="impress"></div>
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+    <script src="assets/js/impress.js"></script>
+    <script src="assets/js/gelang.js"></script>
+    <script src="assets/js/gelang.slide.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var slide = new GeLang.Slide({
+                slides: [
+                    { name: "slide1", title: "Slide 01", x: 0, y: 0, z: 0, rx: 0, ry: 0, rz: 0, scale: 1 },
+                    { name: "slide2", title: "Slide 02", x: 500, y: 0, z: -500, rx: 0, ry: 90, rz: 0 },
+                    { name: "slide3", title: "Slide 03", x: 0, y: 0, z: -1000, rx: 0, ry: 180, rz: 0 },
+                    { name: "slide4", title: "Slide 04", x: -500, y: 0, z: -500, rx: 0, ry: 270, rz: 0 },
+
+                    { name: "slide5", title: "Slide 05", x: -500, y: 0, z: 500, rx: 0, ry: 270, rz: 0 },
+                    { name: "slide6", title: "Slide 06", x: 0, y: 0, z: 1000, rx: 0, ry: 360, rz: 0 },
+                ]
+            });
+            slide.render();
+        });
+    </script>
+</body>
+</html>
